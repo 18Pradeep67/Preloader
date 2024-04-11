@@ -23,35 +23,23 @@ img {
     flex-direction: column;
     background-color: #000000; 
 }
-
-#logo {
-    opacity: 0; /* Initially hide the logo */
-    /* transition: opacity 1s ease;  */
-}
-
-/* Name styles */
 #name {
     display: flex;
     justify-content: center;
     margin-top: 20px;    
     font-family:'Poppins', sans-serif;
 }
-
-/* Individual name span styles */
 #name span {
     color: white;
     font-size: 36px;
     font-weight: bold;
-    opacity: 0; /* Initially hide each name span */
-    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
 }
-
-/* Animation class for name spans */
 .word-animation {
     background: linear-gradient(90deg, #1183ca, #1457d2, #26039a, #6a14db);
     padding: 5px 10px;
     margin: 0 5px;
     border-radius: 10px;
 }
-
 

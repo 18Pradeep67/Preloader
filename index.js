@@ -1,3 +1,4 @@
+document.getElementById("actual-content").style.display="none";
 gsap.to("#logo", { duration: 1, y:-50, opacity: 100, ease: "power2.in" });
 gsap.utils.toArray("#name span").forEach((span, index) => {
     gsap.to(span, { 
@@ -31,11 +32,16 @@ function showContent() {
             ease: "power2.inOut"
         });
     });
+    document.getElementById("actual-content").style.display="contents";
+    // setTimeout(function() {
+    //     window.location.href = "https://vitchennai.acm.org/";
+    // }, 1000);
     gsap.to('body',{
-        duration:1,
-        backgroundColor:'#ffffff'
+        duration:2,
+        y:"-100vh",
+        opacity:1,
+        ease:"power2.inOut"
     });
-    setTimeout(()=>{a.classList.remove("container");},1000);
-    setTimeout(()=>{a.remove();},1000);
+
 }
 
